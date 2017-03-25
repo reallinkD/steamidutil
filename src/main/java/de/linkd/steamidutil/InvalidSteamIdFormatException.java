@@ -1,8 +1,8 @@
 package de.linkd.steamidutil;
 
 /**
- * Thrown to indicate a parsing error due to an invalid Steam ID format.<br />
  * See <a href="https://developer.valvesoftware.com/wiki/SteamID">https://developer.valvesoftware.com/wiki/SteamID</a>.
+ * Thrown to indicate a parsing error due to an invalid Steam ID format.
  * 
  * @author github/reallinkD
  */
