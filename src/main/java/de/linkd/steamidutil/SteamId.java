@@ -144,4 +144,9 @@ public class SteamId {
 
 		return convert3IdToId32(convertId64To3Id(steamId64));
 	}
+
+	@Override
+	public String toString() {
+		return getClass().getName() + "@" + Integer.toHexString(hashCode()) + "[steam3Id=" + steam3Id + "]";
+	}
 }
