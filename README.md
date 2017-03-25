@@ -15,6 +15,13 @@ But Steam IDs aren't much fun if we're not doing anything with their values, are
 String mySteamId64 = steamId32.getSteamId64(); // "76561198165637099"
 ```
 
+For convenience, `SteamId` overrides `toString`, for example:
+```
+System.out.println(new SteamId("76561198165637099"));
+// prints "de.linkd.steamidutil.SteamId@15db9742[steam3Id=[U:1:205371371]]"
+```
+
+
 ## Conversion
 Do you simply want to convert a Steam ID from one format to another? Easy as pie.
 ```
@@ -25,5 +32,5 @@ SteamId.convertId32To3Id("[U:1:205371371]"); // "STEAM_0:1:102685685"
 SteamId.convertId32ToId64("[U:1:205371371]"); // "76561198165637099"
 
 SteamId.convertId64To3Id("76561198165637099"); // "STEAM_0:1:102685685"
-SteamId.convertId64ToId32("76561198165637099"); // "[U:1:205371371]";
+SteamId.convertId64ToId32("76561198165637099"); // "[U:1:205371371]"
 ```
