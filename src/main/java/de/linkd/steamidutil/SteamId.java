@@ -1,9 +1,8 @@
 package de.linkd.steamidutil;
 
 /**
- * See <a href="https://developer.valvesoftware.com/wiki/SteamID">https://developer.valvesoftware.com/wiki/SteamID</a>.
- * 
  * @author github/reallinkD
+ * @see <a href="https://developer.valvesoftware.com/wiki/SteamID">https://developer.valvesoftware.com/wiki/SteamID</a>
  */
 public class SteamId {
 	public static final String STEAM3ID_PATTERN = "\\[U:1:\\d+\\]";
@@ -60,6 +59,7 @@ public class SteamId {
 	 * @param steam3Id
 	 *            the steam3Id to convert
 	 * @return the steamId32 value of <code>steam3Id</code>
+	 * @see #getSteamId32()
 	 */
 	public static String convert3IdToId32(String steam3Id) {
 		if (!steam3Id.matches(STEAM3ID_PATTERN))
@@ -75,6 +75,7 @@ public class SteamId {
 	 * @param steam3Id
 	 *            the steam3Id to convert
 	 * @return the steamId64 value of <code>steam3Id</code>
+	 * @see #getSteamId64()
 	 */
 	public static String convert3IdToId64(String steam3Id) {
 		if (!steam3Id.matches(STEAM3ID_PATTERN))
@@ -89,6 +90,7 @@ public class SteamId {
 	 * @param steamId32
 	 *            the steamId32 to convert
 	 * @return the steam3Id value of <code>steamId32</code>
+	 * @see #getSteam3Id()
 	 */
 	public static String convertId32To3Id(String steamId32) {
 		if (!steamId32.matches(STEAMID32_PATTERN))
@@ -103,6 +105,7 @@ public class SteamId {
 	 * @param steamId32
 	 *            the steamId32 to convert
 	 * @return the steamId64 value of <code>steamId32</code>
+	 * @see #getSteamId64()
 	 */
 	public static String convertId32ToId64(String steamId32) {
 		if (!steamId32.matches(STEAMID32_PATTERN))
@@ -119,6 +122,7 @@ public class SteamId {
 	 * @param steamId64
 	 *            the steamId64 to convert
 	 * @return the steam3Id value of <code>steamId64</code>
+	 * @see #getSteam3Id()
 	 */
 	public static String convertId64To3Id(String steamId64) {
 		if (!steamId64.matches(STEAMID64_PATTERN))
@@ -135,6 +139,7 @@ public class SteamId {
 	 * @param steamId64
 	 *            the steamId64 to convert
 	 * @return the steamId32 value of <code>steamId64</code>
+	 * @see #getSteamId32()
 	 */
 	public static String convertId64ToId32(String steamId64) {
 		if (!steamId64.matches(STEAMID64_PATTERN))
