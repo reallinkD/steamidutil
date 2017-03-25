@@ -21,7 +21,6 @@ System.out.println(new SteamId("76561198165637099"));
 // prints "de.linkd.steamidutil.SteamId@15db9742[steam3Id=[U:1:205371371]]"
 ```
 
-
 ## Conversion
 Do you simply want to convert a Steam ID from one format to another? Easy as pie.
 ```
